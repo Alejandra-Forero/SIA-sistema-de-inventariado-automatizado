@@ -1,0 +1,152 @@
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #e3e8e4;
+    color: #333;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url("../imagenes/mercado.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;      /* sirve para que el fondo quede fijo mientras se mueve el cursor por la pagina */
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #9bb32f;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+main {
+    width: 100%;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* FORMULARIO */
+
+main section {
+    background-color: #9bb32f;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Título */
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+section p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* CAMPOS DEL FORMULARIO */
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+form input:focus {                   /* para que el usuario pueda ubicarse en los campos de escritura */
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/*OLVIDASTE TU CONTRASEÑA */
+
+form p {
+    text-align: right;
+    font-size: 13px;
+    color:green;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* BOTÓN INICIAR SESIÓN */
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #fdd106;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #8aa82a;
+}
+
+/* BOTONES GOOGLE Y APPLE */
+
+main section:nth-child(2) {
+    text-align: center;
+}
+
+main section:nth-child(2) p {
+    margin-bottom: 15px;
+}
+
+main section:nth-child(2) button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px 2%;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main section:nth-child(2) button:hover {
+    background-color: #f1f1f1;
+}

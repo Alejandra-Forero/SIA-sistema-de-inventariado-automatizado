@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3e8e4;
+    color: #333;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #9bb32f;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+header nav a {
+    background-color: #fdd106;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* MENÚ LATERAL */
+
+aside {
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    padding: 25px 15px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+aside a:hover {
+    background-color: #9bb32f;
+    color: white;
+}
+
+/* CONTENIDO */
+
+main {
+    margin-left: 200px;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #657a18;
+    margin-bottom: 15px;
+}
+
+/* FORMULARIO */
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fdd106;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8aa82a;
+    color: white;
+}
+
+/* TABLAS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #9bb32f;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table a {
+    color: #657a18;
+    text-decoration: none;
+}
+
+/* REPORTES */
+
+#modulo-reportes ul {
+    margin-left: 20px;
+}
+
+#modulo-reportes li {
+    margin: 8px;
+}
+
+#modulo-reportes a {
+    color: #657a18;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+footer li {
+    display: inline;
+    margin: 10px;
+}
+
+footer a {
+    color: #fdd106;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    aside {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
