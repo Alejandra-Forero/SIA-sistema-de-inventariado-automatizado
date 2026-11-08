@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #e3e8e4;
+    color: #333;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url("../imagenes/mercado.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #9bb32f;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+/* SECCIONES */
+
+body > section {
+    width: 90%;
+    max-width: 450px;
+    margin: 35px auto 20px;
+    padding: 30px;
+    background-color: #9bb32f;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+body > section + section {
+    margin-top: 0;
+}
+
+/* TÍTULOS */
+
+h3 {
+    font-size: 27px;
+    color: #1f2937;
+    margin-bottom: 12px;
+}
+
+section p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIO */
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* TÉRMINOS Y CONDICIONES */
+
+.terms-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+form p {
+    font-size: 13px;
+    color: green;
+    margin: 5px 0 20px;
+}
+
+/* BOTÓN CREAR CUENTA */
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #fdd106;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #fdd106;
+}
+
+/* GOOGLE Y APPLE */
+
+body > section:nth-of-type(2) {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+body > section:nth-of-type(2) p {
+    margin-bottom: 12px;
+}
+
+body > section:nth-of-type(2) button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px 2%;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body > section:nth-of-type(2) button:hover {
+    background-color: #f1f1f1;
+}
