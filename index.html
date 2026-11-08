@@ -49,8 +49,8 @@
 </header>
 
 <main>
-    <section id="inicio" aria-label="Presentación principal" style="background-image: url(imagenes/bground.jpg);">
-        <div class="lema container-fluid">
+    <section id="inicio" class="lema-container" aria-label="Presentación principal">
+        <div class="lema">
             <h2 class="text-center">
                 EL SABOR DEL CAMPO Y LA <br>
                 FRESCURA QUE TU FAMILIA NECESITA
@@ -58,13 +58,14 @@
         </div>
     </section>
 
-    <div class="descripcion container-fluid py-4">
-        <h2 class="titulo-naranja text-center">En nuestra mayorista</h2>
+    <div class="descripcion">
+    <h2 class="text-center text-warning justify-content-space-between">En nuestra mayorista</h2>
 
-        <div class="descripcion-contenido row align-items-center g-4">
-            <div class=" col-md">
+    <div class="descripcion-contenido row g-4">
+        <div class="col-12 col-md-6">
+            <div class="caja caja-descripcion">
                 <p>Las frutas y verduras que brindamos en nuestra central mayorista se caracterizan por su frescura, calidad y origen natural.<br>
-                   Trabajamos por ofrecer producos seleccionados cuidadosamente sin quimicos durante su cosecha.<br>
+                   Trabajamos por ofrecer productos seleccionados cuidadosamente sin químicos durante su cosecha.<br>
                    Queremos que cada alimento que llegue a tu mesa conserve su sabor, frescura y calidad.</p>
             </div>
             <div class=" col-md order-1 order-md-2">
@@ -72,57 +73,63 @@
             </div>
         </div>
 
-        <h2 class="titulo-verde text-warning text-decoration-underline text-center">FRUTAS</h2>
+        <div class="col-12 col-md-6">
+            <div class="caja caja-imagen">
+                <img src="imagenes/mercado.jpg" class="descripcion-img" alt="Variedad de frutas frescas">
+            </div>
+        </div>
     </div>
-<section class="container py-5">
-    <div class="row" id="titulo-servicios" >Mas Vendidas</div>
+</div>
+<section class="seccion-productos">
+    <div class="container">
+        <h2 class="titulo-verde text-warning text-decoration-underline text-center">FRUTAS</h2>
+        <div class="row" id="titulo-servicios">Mas Vendidas</div>
 
-    <div class="row">
+        <div class="row g-4">
 
-        <div class="col-12 col-md-6 col-lg-6">
-            <div class="producto-card">
-                <img src="imagenes/piña.jpg" alt="piñas" class="producto-img">
-                <div class="producto-info">
-                    <p class="producto-nombre">Piña</p>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="producto-card">
+                    <img src="imagenes/piña.jpg" alt="Piñas" class="producto-img">
+                    <div class="producto-info">
+                        <p class="producto-nombre">Piña</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-lg-6">
-            <div class="producto-card">
-                <img src="imagenes/naranja.jpg" alt="Naranja" class="img-fluid producto-img">
-                <div class="producto-info">
-                    <p class="producto-nombre">Naranjas</p>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="producto-card">
+                    <img src="imagenes/naranja.jpg" alt="Naranjas" class="producto-img">
+                    <div class="producto-info">
+                        <p class="producto-nombre">Naranjas</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-lg-6">
-            <div class="producto-card">
-                <img src="imagenes/mango.jpg" alt="Mango" class="img-fluid producto-img">
-                <div class="producto-info">
-                    <p class="producto-nombre">Mango</p>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="producto-card">
+                    <img src="imagenes/mango.jpg" alt="Mango" class="producto-img">
+                    <div class="producto-info">
+                        <p class="producto-nombre">Mango</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-12 col-md-6 col-lg-6">
-            <div class="producto-card">
-                <img src="imagenes/limon.jpg" alt="limones" class="img-fluid producto-img">
-                <div class="producto-info">
-                    <p class="producto-nombre">Limon</p>
-
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="producto-card">
+                    <img src="imagenes/limon.jpg" alt="Limones" class="producto-img">
+                    <div class="producto-info">
+                        <p class="producto-nombre">Limón</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 </section>
 
-    <h2 id="titulo-nosotros" class="text-success text-decoration-underline text-center">Nosotros</h2>
-
-    <section id="nosotros" class="nosotros container-fluid py-4">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+    <section id="nosotros" class="nosotros container-fluid ">
+        <h2 id="titulo-nosotros" class="text-warning text-decoration-underline text-center">Nosotros</h2>
+        <div class="row row-cols-1 row-cols-md-2">
             <div class="col">
                 <div class="box h-100">
                     <h3>MISION</h3>
@@ -142,7 +149,7 @@
         </div>
     </section>
 
-<section id="contacto" class="contactanos-visual container-fluid py-4">
+<section id="contacto" class="contactanos-info container-fluid">
     <div class="row align-items-center g-4 contacto-card">
 
         <div class="col-12 col-md-6">
