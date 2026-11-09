@@ -3,21 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-h2,h3{
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-p {
-  
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 18px;
-  }
-
-
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -25,72 +10,76 @@ body {
     color: #333333;
 }
 
+h1 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2, h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+}
+
+/* ---------- Header / menú ---------- */
 header {
     width: 100%;
-    background-color:#9bb32f;
+    background-color: #9bb32f;
     align-items: center;
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
-  padding: 15px 0;
+    padding: 15px 0;
 }
 
 .menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .menu ul li a {
-  text-decoration: none;
-  color: #2b2b2b;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.2s ease;
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
 }
 
 .menu ul li a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .menu ul li a.btn-nav {
-  background-color: #ffffff;
-  color: #4a6b1f;
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-weight: bold;
+    background-color: #ffffff;
+    color: #4a6b1f;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 .menu ul li a.btn-nav:hover {
-  background-color: #f0f0f0;
-  color: #2b2b2b;
-}
-h1{
-
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-h2,h3{
-  font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-p {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-style:normal;
-
+    background-color: #f0f0f0;
+    color: #2b2b2b;
 }
 
+/* ---------- Inicio ---------- */
 #inicio {
     display: flex;
     justify-content: flex-end;
@@ -100,185 +89,149 @@ p {
     margin: 30px auto;
     border-radius: 15px;
     padding-right: 70px;
-  }
+}
 
 .lema {
     width: auto;
 }
-.lema-container{
-  background-image: url(../imagenes/index.png);;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 400px;
+
+.lema-container {
+    background-image: url(../imagenes/index.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
 }
+
 .lema h2 {
     text-align: left;
     font-size: 25px;
     color: #e1e740;
     font-weight: bold;
 }
+
+/* ---------- Descripción ---------- */
 .descripcion-contenido {
-  display: flex;
-  align-items: flex-start;
-  gap: 25px;
-  flex-wrap: wrap; 
-  align-items: stretch;         
+    align-items: stretch;
 }
 
 .caja {
-  height: 100%;                 
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-
 .caja-descripcion {
-  background-color: #ffffff;
-  padding: 30px;
-  display: flex;
-  align-items: center;          
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .caja-descripcion p {
-  margin: 0;
-  text-align: left;
-  justify-content: space-between;
+    margin: 0;
+    text-align: left;
 }
 
 .caja-imagen {
-  position: relative;
-  min-height: 250px;           
-  background-color: #ffffff;
+    position: relative;
+    min-height: 250px;
+    background-color: #ffffff;
 }
 
 .descripcion-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;             
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 
 main {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
+
+/* ---------- Productos ---------- */
 .seccion-productos {
-  background-color: #ffffff;
+    background-color: #fff4e0;
+    border-radius: 15px;
+    margin: 20px 0;
 }
 
 .producto-card {
-  background-color: #fff4e0;  
-  border-radius: 15px;
-  overflow: hidden; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  height: 100%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.producto-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    background-color: #fff4e0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    height: 100%;
 }
 
 .producto-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-}
-.seccion-productos {
-  background-color: #fff4e0;  
-  border-radius: 15px;
-  margin: 20px 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
 .producto-info {
-  padding: 15px;
-  text-align: center;
+    padding: 15px;
+    text-align: center;
 }
-.producto-img {
-    width: 100%;
-    height: 250px;       
-    object-fit: cover;    
 
 .producto-nombre {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 700;
-  color: #4a6b1f;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4a6b1f;
 }
-.contactanos{
-    
+
+/* ---------- Nosotros ---------- */
+.nosotros {
     width: 100%;
     max-width: 1100px;
-    min-height: 450px;          
-    margin: 30px auto;          
-    padding: 40px;              
+    min-height: 450px;
+    margin: 30px auto;
+    padding: 40px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
-  }
-      
-
-
+    justify-content: center;
+    background-image: url(../imagenes/descripcion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .nosotros .box {
-    justify-content: center;
-    text-align: center;
-    margin: 1rem;
+    background-color: #e6efc2;
+    border-radius: 15px;
+    padding: 30px 25px;
+    margin: 0;
     color: #000000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-.nosotros {
-    
-  width: 100%;
-  max-width: 1100px;
-  min-height: 450px;          
-  margin: 30px auto;          
-  padding: 40px;              
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;    
-  background-image: url(../imagenes/descripcion.jpg);
+    text-align: center;
 }
 
-
-
-
-.nosotros .box {
-  background-color: #e6efc2;   
-  border-radius: 15px;
-  padding: 30px 25px;
-  margin: 0;               
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  justify-content: center;
-  text-align: center;
-}
-
-.nosotros .box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
-}
-
+/* ---------- Contacto ---------- */
 .contactanos-info {
-  background-color: #fde9c9;  
-  border-radius: 15px;
-  margin: 20px 0;
+    background-color: #fde9c9;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 40px;
 }
 
 
+/* ---------- Footer ---------- */
 footer {
-    width:cover;
+    width: auto;
     margin: 40px;
     padding: 35px;
     background: #a7bd23;
@@ -288,13 +241,13 @@ footer {
     justify-content: center;
 }
 
-div.box {
-  align-items: center;
-  justify-content: center;
-}
-
 footer p {
     margin: 7px 0;
     font-size: 14px;
     color: #000;
+}
+
+div.box {
+    align-items: center;
+    justify-content: center;
 }

@@ -24,7 +24,7 @@ body {
 /* ENCABEZADO */
 
 header {
-    background-color: #9bb32f;
+    background-color: #ccc;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
@@ -46,7 +46,7 @@ main {
 /* FORMULARIO */
 
 main section {
-    background-color: #9bb32f;
+    background-color: #ccc;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 12px;
@@ -121,7 +121,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #8aa82a;
+    background-color: #ccc;
 }
 
 /* BOTONES GOOGLE Y APPLE */
