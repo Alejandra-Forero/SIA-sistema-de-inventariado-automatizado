@@ -11,7 +11,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="CSS/index-style.css">
+
     <title>Sistema de inventariado automatizado</title>
 </head>
 <body>
@@ -33,7 +36,23 @@
           <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
           <li class="nav-item">
             <a class="nav-link btn btn-success px-4 fw-semibold" href="login.html">
+<<<<<<< HEAD
               <i class="bi bi-person-fill me-1"></i> Iniciar Sesión </a> </li>
+=======
+              <i class="bi bi-person-fill me-1"></i> Iniciar Sesión
+            </a>
+          </li>
+           <li class="nav-item ms-md-2">
+            <button id="btnTema" class="btn btn-sm btn-outline-secondary" aria-label="Cambiar tema">
+            <i class="bi bi-moon-stars"></i>
+            </button>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#carrito">
+              <i class="bi bi-cart3"></i> <span id="contadorCarrito">0</span>
+            </a>
+          </li>
+>>>>>>> 995e1a31fa0ac2dc877e9927eb073ce305570493
         </ul>
       </div>
     </div>
@@ -107,12 +126,13 @@
             <h2 class="titulo-verde text-warning text-decoration-underline text-center">FRUTAS</h2>
             <div class="row" id="titulo-servicios"><p class="text-center">Más vendidas</p></div>
 
-            <div class="row g-4">
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="producto-card">
-                        <img src="imagenes/pina.jpg" alt="Piñas" class="producto-img">
-                        <div class="producto-info">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="producto-card">
+                            <img src="imagenes/pina.jpg" alt="Piñas" class="producto-img">
+                            <div class="producto-info">
                             <p class="producto-nombre">Piña</p>
+                            <button class="btn btn-success btn-sm" onclick="agregar('pina', 'Piña', 3500)">Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -121,7 +141,8 @@
                     <div class="producto-card">
                         <img src="imagenes/naranja.jpg" alt="Naranjas" class="producto-img">
                         <div class="producto-info">
-                            <p class="producto-nombre">Naranjas</p>
+                        <p class="producto-nombre">Naranjas</p>
+                            <button class="btn btn-success btn-sm" onclick="agregar('naranja', 'Naranjas', 2800)">Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -131,6 +152,7 @@
                         <img src="imagenes/mango.jpg" alt="Mango" class="producto-img">
                         <div class="producto-info">
                             <p class="producto-nombre">Mango</p>
+                            <button class="btn btn-success btn-sm" onclick="agregar('mango', 'Mango', 4200)">Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -140,6 +162,7 @@
                         <img src="imagenes/limon.jpg" alt="Limones" class="producto-img">
                         <div class="producto-info">
                             <p class="producto-nombre">Limón</p>
+                            <button class="btn btn-success btn-sm" onclick="agregar('limon', 'Limón', 2500)">Agregar</button>
                         </div>
                     </div>
                 </div>
@@ -181,12 +204,19 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1790601288520!6m8!1m7!1slu1yy6RnRD3FNucfkvQFsg!2m2!1d5.821453853782082!2d-73.03416595544708!3f90.51076!4f0!5f0.7820865974627469"
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1790601288520!6m8!1m7!1slu1yy6RnRD3FNucfkvQFsg!2m2!1d5.821453853782082!2d-73.03416595544708!3f90.51076!4f0!5f0.7820865974627469">
                     width="100%" height="350" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Ubicación en Google Maps">
                 </iframe>
             </div>
         </div>
     </section>
+
+    <section id="carrito" class="container my-4">
+        <h2 class="text-center text-warning">Carrito</h2>
+        <ul id="listaCarrito" class="list-group mb-3"></ul>
+        <p class="text-end fs-5">Total: <strong id="totalCarrito">$0</strong></p>
+    </section>
+
 </main>
 
 <footer>
@@ -214,11 +244,22 @@
         </div>
     </div>
 </footer>
-<script src="JAVA/modo_oscuro.js"></script>
+
 <script src="JAVA/carrusel_imagenes.js"></script>
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="JAVA/modo_oscuro.js"></script>
+
+<script src="JAVA/carrito.js"></script>
+
+<a href="https://wa.me/573213782510?text=Hola,%20quiero%20informaci%C3%B3n"
+     class="btn-whatsapp"
+     target="_blank"
+     rel="noopener"
+     aria-label="Escríbenos por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
 </body>
 </html>
