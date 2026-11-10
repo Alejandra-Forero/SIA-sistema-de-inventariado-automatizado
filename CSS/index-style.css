@@ -261,11 +261,11 @@ div.box {
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
-  max-width: 100%;      /* antes: 1000px, por eso se veía más angosto */
+  max-width: 100%;      
   position: relative;
-  margin: 20px 0;       /* separa el carrusel de la sección de arriba */
+  margin: 20px 0;       
   border-radius: 15px;
-  overflow: hidden;     /* recorta la imagen con las esquinas redondeadas */
+  overflow: hidden;    
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 /* Hide the images by default */
