@@ -22,9 +22,10 @@ body {
 /* ENCABEZADO */
 
 header {
-    background-color: #e6e8df;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    width: 100%;
+    background-color: #9bb32f;
+    display: flex;
+    justify-content: center;
 }
 
 header img {
