@@ -87,7 +87,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 30px auto;
     border-radius: 15px;
     padding-right: 70px;
@@ -153,7 +153,7 @@ header {
 
 main {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -194,7 +194,7 @@ main {
 /* ---------- Nosotros ---------- */
 .nosotros {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1500px;
     min-height: 450px;
     margin: 30px auto;
     padding: 40px;
