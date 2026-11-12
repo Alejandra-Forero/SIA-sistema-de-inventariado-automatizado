@@ -22,9 +22,10 @@ body {
 /* ENCABEZADO */
 
 header {
-    background-color: #e6e8df;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    width: 100%;
+    background-color: #9bb32f;
+    display: flex;
+    justify-content: center;
 }
 
 header img {
@@ -112,7 +113,7 @@ form button {
     padding: 12px;
     border: none;
     border-radius: 7px;
-    background-color: #405310cc;
+    background-color: #9bb32f;
     color: white;
     font-size: 16px;
     font-weight: bold;

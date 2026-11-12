@@ -24,10 +24,12 @@ body {
 /* ENCABEZADO */
 
 header {
-    background-color: #ccc;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
+    width: 100%;
+    background-color: #9bb32f;
+    display: flex;
+    justify-content: center;
 }
+
 
 header img {
     width: 150px;
@@ -46,7 +48,7 @@ main {
 /* FORMULARIO */
 
 main section {
-    background-color: #ccc;
+    background-color: #deeca0;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 12px;
@@ -112,7 +114,7 @@ form button {
     padding: 12px;
     border: none;
     border-radius: 7px;
-    background-color: #fdd106;
+    background-color: #9bb32f;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -120,8 +122,26 @@ form button {
     transition: 0.3s;
 }
 
+.mi-boton-estilo {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #9bb32f;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
 form button:hover {
     background-color: #ccc;
+}
+
+.mi-boton-estilo:hover {
+    background-color: #9bb32f;
 }
 
 /* BOTONES GOOGLE Y APPLE */
