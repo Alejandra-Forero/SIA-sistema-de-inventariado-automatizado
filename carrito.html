@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+  <div class="container my-4">
+    <h2>Tu carrito</h2>
+    <table class="table">
+      <thead>
+        <tr><th>Producto</th><th>Precio</th><th>Cant.</th><th>Total</th><th></th></tr>
+      </thead>
+      <tbody id="tablaCarrito"></tbody>
+    </table>
+    <div class="text-end">
+      <strong>Total: <span id="totalCarrito">$0</span></strong>
+      <button class="btn btn-success">Pagar</button>
+    </div>
+    <a href="index.html" class="btn btn-secondary mt-3">← Seguir comprando</a>
+  </div>
+  <script src="carrito.js"></script>
+</body>
+</html>

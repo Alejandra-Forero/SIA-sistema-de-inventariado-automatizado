@@ -125,7 +125,10 @@ header {
 }
 
 .caja-descripcion {
-    background-color: #ffffff;
+    background-color: var(--bs-body-bg);
+    border: 2px solid #a7bd23;
+    text-align: justify;
+    border-radius: 15px;
     padding: 30px;
     display: flex;
     align-items: center;
@@ -139,7 +142,9 @@ header {
 .caja-imagen {
     position: relative;
     min-height: 250px;
-    background-color: #ffffff;
+    background-color: var(--bs-body-bg);
+    border: 2px solid #a7bd23;
+    border-radius: 15px;
 }
 
 .descripcion-img {
@@ -158,6 +163,7 @@ main {
 }
 
 /* ---------- Productos ---------- */
+
 .seccion-productos {
     background-color: #fff4e0;
     border-radius: 15px;
@@ -182,6 +188,7 @@ main {
 .producto-info {
     padding: 15px;
     text-align: center;
+    
 }
 
 .producto-nombre {
@@ -223,13 +230,14 @@ main {
 }
 
 /* ---------- Contacto ---------- */
+
 .contactanos-info {
     background-color: #fde9c9;
+    color: #000000;   /* texto negro sobre fondo claro */
     border-radius: 15px;
     margin: 20px 0;
     padding: 40px;
 }
-
 
 /* ---------- Footer ---------- */
 footer {
@@ -253,8 +261,6 @@ div.box {
     align-items: center;
     justify-content: center;
 }
-
-
 
 * {box-sizing:border-box}
 
@@ -334,6 +340,8 @@ div.box {
 
 .active, .dot:hover {
   background-color: #717171;}
+
+
 .btn-whatsapp {
   position: fixed;
   right: 20px;

@@ -114,7 +114,7 @@ form button {
     padding: 12px;
     border: none;
     border-radius: 7px;
-    background-color: #405310cc;
+    background-color: #9bb32f;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -126,7 +126,7 @@ form button {
     display: inline-block;
     width: 100%;
     padding: 12px;
-    background-color: #405310cc;
+    background-color: #9bb32f;
     color: white;
     text-decoration: none;
     border-radius: 7px;
@@ -141,7 +141,7 @@ form button:hover {
 }
 
 .mi-boton-estilo:hover {
-    background-color: #49592B;
+    background-color: #9bb32f;
 }
 
 /* BOTONES GOOGLE Y APPLE */

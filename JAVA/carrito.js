@@ -1,13 +1,12 @@
-// Carrito simple con localStorage
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
 function guardar() {
-  localStorage.setItem('carrito', JSON.stringify(carrito));
-  mostrar();
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    mostrar();
 }
 
 function agregar(id, nombre, precio) {
-  const item = carrito.find(p => p.id === id);
+    const item = carrito.find(p => p.id === id);
   if (item) {
     item.cantidad++;
   } else {
@@ -17,14 +16,15 @@ function agregar(id, nombre, precio) {
 }
 
 function quitar(id) {
-  carrito = carrito.filter(p => p.id !== id);
-  guardar();
+    carrito = carrito.filter(p => p.id !== id);
+    guardar();
 }
 
 function mostrar() {
-  const lista = document.getElementById('listaCarrito');
-  const total = document.getElementById('totalCarrito');
-  const contador = document.getElementById('contadorCarrito');
+    const lista = document.getElementById('listaCarrito');
+    const total = document.getElementById('totalCarrito');
+    const contador = document.getElementById('contadorCarrito');
+    const vacio = document.getElementById('carritoVacio');
   if (!lista) return;
 
   lista.innerHTML = '';
@@ -40,6 +40,7 @@ function mostrar() {
   const suma = carrito.reduce((a, p) => a + p.precio * p.cantidad, 0);
   total.textContent = '$' + suma.toLocaleString('es-CO');
   contador.textContent = carrito.reduce((a, p) => a + p.cantidad, 0);
+  vacio.style.display = carrito.length === 0 ? 'block' : 'none';
 }
 
 mostrar();
